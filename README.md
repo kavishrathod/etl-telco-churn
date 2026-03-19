@@ -136,9 +136,9 @@ A Power BI dashboard was built on top of the cleaned output to visualize:
 
 ## 🔮 Future Work
 
-Cloud Migration: Move the pipeline to AWS S3 for storage and Amazon Redshift for scalable data warehousing
+**Cloud Migration**: Move the pipeline to AWS S3 for storage and Amazon Redshift for scalable data warehousing
 
-Workflow Orchestration: Integrate Apache Airflow to automate scheduling, monitoring, and pipeline retries
+**Workflow Orchestration**: Integrate Apache Airflow to automate scheduling, monitoring, and pipeline retries
 
 ---
 
