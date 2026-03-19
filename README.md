@@ -1,6 +1,8 @@
 # 📦 ETL Data Pipeline — Telco Customer Churn
 
 An end-to-end **ETL (Extract, Transform, Load) pipeline** built in Python to process **7,043 telecom customer records** for churn analysis. The pipeline ingests raw CSV data, applies data cleaning and feature engineering, and loads structured output into a **MySQL database** (with CSV fallback).
+I built this project to get hands-on with ETL pipelines after studying data engineering concepts. The Telco Churn dataset from Kaggle was a good choice because it had real dirty data issues — the TotalCharges column had blank strings that needed to be handled before loading.
+
 
 ---
 
