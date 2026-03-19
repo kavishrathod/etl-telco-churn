@@ -25,9 +25,7 @@ logging.basicConfig(
 
 
 def run_pipeline():
-    logging.info("=" * 55)
     logging.info("   ETL PIPELINE STARTED — Telco Customer Churn")
-    logging.info("=" * 55)
 
     start = time.time()
 
@@ -58,9 +56,7 @@ def run_pipeline():
         logging.warning(f"\n  ⚠️  Validation MISMATCH — Input: {input_rows}, Output: {output_rows}")
 
     elapsed = round(time.time() - start, 2)
-    logging.info(f"\n{'='*55}")
     logging.info(f"   PIPELINE COMPLETED in {elapsed}s")
-    logging.info(f"{'='*55}\n")
 
     return result
 
