@@ -19,7 +19,7 @@ logging.basicConfig(
 LOG_PATH = os.path.join(os.path.dirname(__file__), "..", "outputs", "logs", "load_log.json")
 OUTPUT_CSV = os.path.join(os.path.dirname(__file__), "..", "outputs", "telco_churn_final.csv")
 
-# MySQL config — update with your credentials
+# MySQL config — update with credentials to load into MySQl else CSV 
 MYSQL_CONFIG = {
     "host": "localhost",
     "user": "root",
