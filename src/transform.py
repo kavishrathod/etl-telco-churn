@@ -30,6 +30,9 @@ def transform_data(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     # Step 1: Fix TotalCharges
+    # TotalCharges has blank strings for new customers (tenure=0)
+    # took me a while to figure out why pd.to_numeric was throwing errors
+    # blank string != NaN so had to strip first
     logging.info("Step 1: Fixing TotalCharges column...")
     df["TotalCharges"] = pd.to_numeric(df["TotalCharges"].str.strip(), errors="coerce")
     median_total = df["TotalCharges"].median()
