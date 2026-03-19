@@ -11,7 +11,6 @@ etl-telco-churn/
 ├── data/
 │   ├── raw/
 │   │   ├── telco_churn_raw.csv        # Raw input dataset (7,043 records)
-│   │   └── generate_dataset.py        # Script to regenerate dataset
 │   └── processed/
 │       └── telco_churn_cleaned.csv    # Output of Transform phase
 ├── src/
